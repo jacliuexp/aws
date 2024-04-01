@@ -42,4 +42,5 @@ sh-4.2$
 ```
 aws s3 ls s3://dev-chunks --recursive
 aws s3 rm s3://dev-chunks --recursive --quiet
+aws s3 rb s3://dev-ais-lb-log --force  # empty and delete
 ```
