@@ -1,4 +1,4 @@
-## aws
+#### aws
 ```
 lsblk -o MOUNTPOINT,SERIAL,UUID,NAME
 MOUNTPOINT SERIAL               UUID                                 NAME
@@ -38,7 +38,7 @@ curl http://169.254.169.254/latest/meta-data/ami-id; echo
 ami-04f4cc368426af213
 sh-4.2$
 ```
-## S3
+#### S3
 ```
 aws s3 ls s3://dev-chunks --recursive
 aws s3 rm s3://dev-chunks --recursive --quiet
