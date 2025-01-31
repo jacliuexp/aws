@@ -44,3 +44,7 @@ aws s3 ls s3://dev-chunks --recursive
 aws s3 rm s3://dev-chunks --recursive --quiet
 aws s3 rb s3://dev-ais-lb-log --force  # empty and delete
 ```
+#### EC2 AWS CLI
+```
+aws ec2 describe-instances --filter "Name=tag:Name,Values=*" --query 'Reservations[].Instances[].{Name: Tags[?Key==`Name`].Value | [0],Instance:State.Name}' --output table
+```
